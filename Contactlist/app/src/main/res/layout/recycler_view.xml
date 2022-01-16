@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp"
+    app:cardBackgroundColor="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Profile_Image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            app:civ_border_color="@color/purple_500"
+            app:civ_border_width="2dp"
+            android:src="@drawable/ic_baseline_person_24"/>
+
+        <LinearLayout
+            android:layout_toStartOf="@+id/btn_update"
+            android:layout_toEndOf="@+id/Profile_Image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Rc_Name"
+                android:textSize="18sp"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Rc_Number"
+                android:textSize="18sp"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Number">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Rc_Mail"
+                android:textSize="18sp"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-Mail">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Rc_Birthday"
+                android:textSize="18sp"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Birthday">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_update"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:background="@null"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
